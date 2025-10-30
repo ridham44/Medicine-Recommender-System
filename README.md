@@ -64,24 +64,13 @@ cd Medicine-Recommender-System
 **Endpoint:**
 `POST /api/medicine/recommend`
 
-**Request Body:**
-
-```json
-{
-  "symptoms": "fever,cough",
-  "age": 28,
-  "gender": "Male"
-}
-```
-
-**Response:**
-
-```json
-{
-  "recommendedMedicine": "Paracetamol",
-  "confidence": 0.94
-}
-```
+🧬 Sample Test Cases
+Symptoms	Age	Gender	Medical History	Expected Recommendation
+fever, cough	25	Male	none	Paracetamol
+headache, nausea	30	Female	migraine	Ibuprofen
+cold, sore throat	40	Male	none	Cetirizine
+body pain, fatigue	22	Female	anemia	Dolo 650
+stomach ache, acidity	28	Male	gastritis	Pantoprazole
 
 MedicineRecommendation/
 │
