@@ -82,7 +82,28 @@ cd Medicine-Recommender-System
   "confidence": 0.94
 }
 ```
-
+MedicineRecommendation/
+│
+├── Backend/
+│ └── MedicineRecommender.API/
+│ ├── Controllers/
+│ ├── MLModels/
+│ ├── Models/
+│ ├── appsettings.json
+│ ├── Program.cs
+│ └── MedicineRecommender.API.csproj
+│
+├── medicine-recommender-frontend/
+│ ├── public/
+│ ├── services/
+│ ├── src/
+│ ├── index.html
+│ ├── package.json
+│ ├── tailwind.config.js
+│ ├── vite.config.js
+│ └── README.md
+│
+└── .Net.sln
 ---
 
 ## 🖥️ UI Overview
