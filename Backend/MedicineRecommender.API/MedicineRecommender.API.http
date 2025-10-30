@@ -1,0 +1,6 @@
+@MedicineRecommender.API_HostAddress = http://localhost:5116
+
+GET {{MedicineRecommender.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

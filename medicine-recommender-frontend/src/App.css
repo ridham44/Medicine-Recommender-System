@@ -1,0 +1,244 @@
+:root {
+  --bg: linear-gradient(135deg, #061218 0%, #0e2a34 25%, #164050 60%, #1f5668 100%);
+  --glass: rgba(255, 255, 255, 0.12);
+  --txt: #fff;
+  --muted: rgba(255, 255, 255, 0.8);
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--txt);
+  background: var(--bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+}
+
+/* Container for entire app */
+.app-container {
+  width: 100%;
+  max-width: 1100px; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Glass effect shared styling */
+.glass {
+  background: var(--glass);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 32px;
+  margin-top: 20px;
+  width: 90%;
+  max-width: 1000px;
+  border-radius: 40px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.logo-text {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 25px;
+}
+
+.navbar-right a {
+  text-decoration: none;
+  color: #ddd;
+  font-size: 1rem;
+  padding: 6px 14px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.navbar-right a:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: cyan;
+}
+
+/* Main content area */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  width: 100%;
+  margin-top: 60px;
+}
+
+/* Form Section */
+.form-container {
+  width: 90%;
+  max-width: 500px;
+  padding: 30px;
+  margin: 20px auto 0;
+  text-align: center;
+}
+
+.form-container h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-container input,
+.form-container select {
+  height: 44px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--txt);
+  padding: 0 12px;
+  font-size: 15px;
+}
+
+.form-container button {
+  height: 44px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #000;
+  background: linear-gradient(135deg, cyan, #00e5ff);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-container button:hover {
+  filter: brightness(1.2);
+}
+
+/* Result box */
+.result {
+  margin-top: 20px;
+  padding: 16px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Footer */
+.footer {
+  margin-top: 80px;
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: center;
+  width: 90%;
+  max-width: 900px;
+  border-radius: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-separator {
+  border: none;
+  height: 1px;
+  width: 90%;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 8px auto;
+}
+
+.footer-desc {
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.footer-copy {
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar-right {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .form-container {
+    padding: 25px;
+  }
+
+  .footer {
+    margin-top: 50px;
+  }
+}
+
+/* Base link styling */
+a {
+  color: #00e5ff; 
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Subtle underline effect */
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background: #00e5ff;
+  transition: width 0.3s ease;
+}
+
+/* Hover effect */
+a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 6px rgba(0, 229, 255, 0.7);
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+/* Optional for visited links */
+a:visited {
+  color: #66ffff;
+}
