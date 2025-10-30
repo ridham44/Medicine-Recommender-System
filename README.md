@@ -82,6 +82,7 @@ cd Medicine-Recommender-System
   "confidence": 0.94
 }
 ```
+
 MedicineRecommendation/
 │
 ├── Backend/
@@ -105,6 +106,35 @@ MedicineRecommendation/
 │
 └── .Net.sln
 ---
+
+💻 Step 3: Run the Frontend (React App)
+
+    Open a new terminal and navigate to the frontend:
+    
+        cd medicine-recommender-frontend
+        
+        
+        Install dependencies:
+        
+        npm install
+        
+        
+        Start the development server:
+        
+        npm run dev
+        
+        
+      The frontend will run at:
+    
+    http://localhost:5173
+    
+    
+    Ensure your backend (http://localhost:5116) is running before testing the form.
+    
+          cd MedicineRecommender.API
+          
+          dotnet run
+
 
 ## 🖥️ UI Overview
 
