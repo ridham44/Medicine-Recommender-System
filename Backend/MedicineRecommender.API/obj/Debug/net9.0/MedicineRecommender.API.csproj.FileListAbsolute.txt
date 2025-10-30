@@ -57,3 +57,4 @@ D:\Lj_University\.Net\MedicineRecommendation\Backend\MedicineRecommender.API\obj
 D:\Lj_University\.Net\MedicineRecommendation\Backend\MedicineRecommender.API\obj\Debug\net9.0\MedicineRecommender.API.pdb
 D:\Lj_University\.Net\MedicineRecommendation\Backend\MedicineRecommender.API\obj\Debug\net9.0\MedicineRecommender.API.genruntimeconfig.cache
 D:\Lj_University\.Net\MedicineRecommendation\Backend\MedicineRecommender.API\obj\Debug\net9.0\ref\MedicineRecommender.API.dll
+D:\Lj_University\.Net\MedicineRecommendation\Backend\MedicineRecommender.API\obj\Debug\net9.0\MedicineRecommender.API.sourcelink.json

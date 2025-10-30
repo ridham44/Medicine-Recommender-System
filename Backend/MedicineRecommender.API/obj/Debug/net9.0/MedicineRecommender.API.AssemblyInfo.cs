@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MedicineRecommender.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4e8783e83f2b90133e186364a9a06b5205f5ff5a")]
 [assembly: System.Reflection.AssemblyProductAttribute("MedicineRecommender.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MedicineRecommender.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
